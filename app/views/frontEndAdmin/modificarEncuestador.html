@@ -1,0 +1,86 @@
+<div ng-controller="EncuestadoresCtrl">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/dashboard.html">Medicare <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/nuevoEncuestador.html">Nuevo encuestador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/encuestadores.html">Encuestadores</a>
+                </li>
+            </ul>
+
+            <a class="nav-link" href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <div class="row-xs-12 text-center">
+        <h1> Nuevo Encuestador</h1>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row-xs-12">
+            <form>
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="email" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label>Primer Apellido:</label>
+                    <input type="email" class="form-control" placeholder="Primer apellido">
+                </div>
+                <div class="form-group">
+                    <label>Segundo Apellido:</label>
+                    <input type="email" class="form-control" placeholder="Segundo apellido">
+                </div>
+                <div class="form-group">
+                    <label>Fecha de nacimiento:</label>
+                    <input type="date" class="form-control" placeholder="Fecha nacimiento">
+                </div>
+                <div class="form-group">
+                    <label>Sexo:</label>
+                <select class="form-control" id="exampleSelect1">
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>INE:</label>
+                    <input type="text" class="form-control" placeholder="INE">
+                </div>
+                <div class="form-group">
+                    <label>NSS:</label>
+                    <input type="text" class="form-control" placeholder="Numero Seguridad Social">
+                </div>
+                <div class="form-group">
+                    <label>Usuario:</label>
+                    <input type="text" class="form-control" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña:</label>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <label>Repita la contraseña:</label>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-primary" href="/dashboard.html">Guardar</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- /.container -->
+
+ </div>

@@ -1,0 +1,67 @@
+<div ng-controller="EncuestasCtrl">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/dashboard.html">Medicare <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/dashboard.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nuevaEncuesta.html">Nueva encuesta</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/encuestas.html">Encuestas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/configurarReporte.html">Configurar Reporte</a>
+                </li>
+            </ul>
+
+            <a class="nav-link" href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h2>Encuestas</h2>
+    </div>
+
+<div class="container">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Identificador</th>
+        <th>Nombre Encuesta</th>
+        <th>Fecha de creación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <a href="/visualizarEncuesta.html">A0123</a>
+        </td>
+        <td>
+            <a href="/visualizarEncuesta.html">nombre1</a>
+        </td>
+        <td>
+            <a href="/visualizarEncuesta.html">dd-mm-yyyy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>A0124</td>
+        <td>nombre2</td>
+        <td>dd-mm-yyyy</td>
+      </tr>
+      <tr>
+        <td>A0125</td>
+        <td>nombre3</td>
+        <td>dd-mm-yyyy</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

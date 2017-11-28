@@ -1,0 +1,82 @@
+<div ng-controller="EncuestasCtrl">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/dashboard.html">Medicare <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/nuevaEncuesta.html">Nueva encuesta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/encuestas.html">Encuestas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/configurarReporte.html">Configurar Reporte</a>
+                </li>
+            </ul>
+
+            <a class="nav-link" href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <div class="row-xs-12 text-center">
+        <h1> Nueva encuesta</h1>
+    </div>
+    <br>
+    <br>
+
+        <div class="container">
+            <div class="row">
+                     <div class="col-sm-12">
+                        <label>Nombre de la encuesta:</label>
+                        <input type="email" class="form-control" placeholder="Nombre encuesta">
+                    </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                    <div class="col-sm-8">
+                        <label>Nombre de la categoría:</label>
+                        <input type="email" class="form-control" placeholder="Nombre categoría">
+                    </div>
+                    <div class="col-sm-2">
+                        <label>Agregar categoría:</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <a class="btn btn-primary">Agregar</a>
+
+                    </div>
+
+            </div>
+
+            <br>
+            <div class="container">
+                <label>Categorías de preguntas:</label>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="list-group">
+                    <a href="/verCategoria.html" class="list-group-item list-group-item-action">Categoría 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Categoría 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Categoría 3</a>
+                </div>
+                </div>
+
+            </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a class="btn btn-success">Guardar</a>
+                </div>
+            </div>
+
+</div>

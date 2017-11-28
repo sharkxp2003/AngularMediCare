@@ -1,0 +1,80 @@
+<div ng-controller="EncuestadoresCtrl">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/dashboard.html">Medicare <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/nuevoEncuestador.html">Nuevo encuestador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/encuestadores.html">Encuestadores</a>
+                </li>
+            </ul>
+
+            <a class="nav-link" href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <div class="row-xs-12 text-center">
+        <h1> Ver Encuestador</h1>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row-xs-12">
+            <form>
+                <div class="form-group ">
+                    <label class="font-weight-bold">Nombre:</label>
+                    <label> nombre1</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Primer Apellido:</label>
+                    <label>apellido 1</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Segundo Apellido:</label>
+                    <label> apellido 2</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Fecha de nacimiento:</label>
+                    <label>dd/mm/yyyy</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Sexo:</label>
+                    <label> masculino</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">INE:</label>
+                    <label>12389283</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">NSS:</label>
+                    <label>123123123</label>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Usuario:</label>
+                    <label>usuario1</label>
+                </div>
+
+                <div class="row-xs-12">
+                <div class="row-xs-6 text-center">
+
+                        <a class="btn btn-warning" href="/modificarEncuestador.html">Modificar</a>
+                </div>
+                <br>
+                <div class="row-xs-6 text-center">
+                    <a class="btn btn-danger" href="/dashboard.html">Eliminar</a>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

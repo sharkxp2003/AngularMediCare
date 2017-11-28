@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Medicare</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/dashboard.html">Medicare <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/nuevaEncuesta.html">Nueva encuesta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/encuestas.html">Encuestas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/configurarReporte.html">Configurar Reporte</a>
+                </li>                
+            </ul>
+
+            <a class="nav-link" href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <div class="row-xs-12 text-center">
+        <h1>Responder Encuesta</h1>
+    </div>
+    <br>
+    <br>
+        <div class="container">
+            <div class="row">
+                     <div class="col-sm-12">
+                        <label class="font-weight-bold">Nombre de la categoría:</label>
+                        <label>categoría 1</label>
+                    </div>
+            </div>
+            <br>
+            <br>
+            <div class="jumbotron">
+                <div class="container">
+                    <label class="font-weight-bold">Preguntas:</label>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <label class="">Pregunta 1</label>
+                                    <div class="list-group">
+                                        <label class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input">
+                                          <span class="custom-control-indicator"></span>
+                                          <span class="custom-control-description">Respuesta 1</span>
+                                        </label>                                    
+                                        <label class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input">
+                                          <span class="custom-control-indicator"></span>
+                                          <span class="custom-control-description">Respuesta 2</span>
+                                        </label>                                     
+                                    </div>
+                            </div>
+                        
+                            <div class="list-group-item">
+                                <label class="">Pregunta 2</label>
+                                    <div class="list-group">
+                                        <label class="custom-control custom-radio">
+                                          <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                          <span class="custom-control-indicator"></span>
+                                          <span class="custom-control-description">Respuesta 1</span>  
+                                        </label>
+                                        <label class="custom-control custom-radio">
+                                          <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                          <span class="custom-control-indicator"></span>
+                                          <span class="custom-control-description">Respuesta 2</span>
+                                        </label>                                   
+                                    </div>
+                            </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    <div class="row">
+            <div class="col-sm-6 text-center">
+                <a class="btn btn-primary" href="/visualizarEncuesta.html">Atrás</a>
+            </div>
+        <br>
+        <br>
+            <div class="col-sm-6 text-center">
+                <a class="btn btn-primary" href="/visualizarEncuesta.html">Siguiente</a>
+            </div>        
+        </div>    
+
+       
+
+        
+
+    <!-- /.container -->
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+    </script>
+
+</body>
+</html>
