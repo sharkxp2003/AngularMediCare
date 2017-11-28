@@ -15,7 +15,7 @@ var myApp = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch','ngMaterial'
   ])
   .config(function ($routeProvider, $httpProvider) {
 
@@ -30,27 +30,27 @@ var myApp = angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       }).when('/loginAdmin', {
-        tempalteUrl: 'view/frontEndAdmin/login.html',
+        tempalteUrl: 'views/frontEndAdmin/login.html',
         controller: 'LoginAdminCtrl',
         controllerAs: 'loginAdminCtrl'
       }).when('/homeAdmin', {
-        templateUrl: 'view/frontEndAdmin/dashboard.html',
+        templateUrl: 'views/frontEndAdmin/dashboard.html',
         controller: 'DashboardAdminCtrl',
         controllerAs: 'dashboardAdminCtrl'
       }).when('/encuestadores',{
-          templateUrl: 'view/frontEndAdmin/encuestadores.html',
+          templateUrl: 'views/frontEndAdmin/encuestadores.html',
           controller: 'EncuestadoresCtrl',
           controllerAs: 'encuestadoresCtrl'
     }).when('/loginEncuestador',{
-        templateUrl: 'view/frontEndEncuestador/login.html',
+        templateUrl: 'views/frontEndEncuestador/login.html',
         controller: 'LoginEncuestadorCtrl',
         controllerAs: 'loginEncuestadorCtrl'
     }).when('/homeEncuestador',{
-        templateUrl: 'view/frontEndEncuestador/dashboard.html',
+        templateUrl: 'views/frontEndEncuestador/dashboard.html',
         controller: 'DashboardEncuestadorCtrl',
         controllerAs: 'dashbardEncuestadorCtrl'
     }).when('/encuestas', {
-        templateUrl: 'view/frontEndEncuestador/encuestas.html',
+        templateUrl: 'views/frontEndEncuestador/encuestas.html',
         controller: 'EncuestasCtrl',
         controllerAs: 'encuestasCtrl'
     })

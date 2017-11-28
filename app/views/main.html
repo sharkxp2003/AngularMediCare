@@ -1,31 +1,36 @@
-<div>
-  <div class="row-md-2 container text-center">
-    <h1>Medicare</h1>
-    <img src="../../images/medicine.png" width="100" height="100">
-    <hr class="style2">
-  </div>
 
-
-  <div class="row-md-2 top-padding-5">
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
     <div class="container">
+      <div class="navbar-header">
 
-      <div class="jumbotron">
-        <div class="row-xs-12">
-          <form>
-            <div class="form-group">
-              <label>Usuario:</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Contraseña:</label>
-              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contraseña">
-            </div>
-            <div class="text-center">
-              <a class="btn btn-primary" href="/dashboard.html">Iniciar Sesión</a>
-            </div>
-          </form>
-        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#/">webstormProjects</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#!/loginAdmin">Administrador</a></li>
+          <li><a ng-href="#!/loginEncuestador">Encuestador</a></li>
+          <li><a ng-href="#!/loginCliente">Cliente</a></li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
+  <div class="row-md-2 container text-center">
+    <h1>Medicare</h1>
+    <img src="../../images/medicine.png" width="200" height="200">
+    <hr class="style2">
+  </div>
+
+
+
+
