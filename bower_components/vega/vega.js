@@ -5053,7 +5053,7 @@ u.toMap = function(list, f) {
 };
 
 u.keystr = function(values) {
-  // use to ensure consistent key generation across modules
+  // use to ensure consistent key generation across services
   var n = values.length;
   if (!n) return '';
   for (var s=String(values[0]), i=1; i<n; ++i) {

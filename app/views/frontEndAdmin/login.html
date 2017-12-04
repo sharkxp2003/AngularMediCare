@@ -11,17 +11,17 @@
 
         <div class="jumbotron">
             <div class="row-xs-12">
-                <form>
+                <form ng-model="modelo">
                     <div class="form-group">
                         <label>Usuario:</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                        <input type="text" class="form-control" id="exampleInputEmail1" ng-model="modelo.usuario" aria-describedby="emailHelp" placeholder="Usuario">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Contraseña:</label>
-                        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="exampleInputEmail1" ng-model="modelo.password" aria-describedby="emailHelp" placeholder="Contraseña">
                     </div>
                     <div class="text-center">
-                        <a class="btn btn-primary" href="#!/">Iniciar Sesión</a>
+                        <a class="btn btn-primary" ng-click="">Iniciar Sesión</a>
                     </div>
                 </form>
             </div>

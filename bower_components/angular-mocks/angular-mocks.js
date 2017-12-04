@@ -2853,9 +2853,9 @@ angular.mock.$RootScopeDecorator = ['$delegate', function($delegate) {
    *
    * See {@link angular.mock.inject inject} for usage example
    *
-   * @param {...(string|Function|Object)} fns any number of modules which are represented as string
-   *        aliases or as anonymous module initialization functions. The modules are used to
-   *        configure the injector. The 'ng' and 'ngMock' modules are automatically loaded. If an
+   * @param {...(string|Function|Object)} fns any number of services which are represented as string
+   *        aliases or as anonymous module initialization functions. The services are used to
+   *        configure the injector. The 'ng' and 'ngMock' services are automatically loaded. If an
    *        object literal is passed each key-value pair will be registered on the module via
    *        {@link auto.$provide $provide}.value, the key being the string name (or token) to associate
    *        with the value on the injector.
@@ -3098,7 +3098,7 @@ angular.mock.$RootScopeDecorator = ['$delegate', function($delegate) {
    *
    *   describe('MyApp', function() {
    *
-   *     // You need to load modules that you want to test,
+   *     // You need to load services that you want to test,
    *     // it loads only the "ng" module by default.
    *     beforeEach(module('myApplicationModule'));
    *

@@ -1,3 +1,7 @@
+
+
+<ng-navigation-encuestador></ng-navigation-encuestador>
+
 <div ng-controller="EncuestasCtrl">
 
 
@@ -11,7 +15,7 @@
             <div class="row">
                      <div class="col-sm-12">
                         <label>Nombre de la encuesta:</label>
-                        <input type="email" class="form-control" placeholder="Nombre encuesta">
+                        <input type="text" class="form-control" ng-model="modelo.encuesta.nombre" placeholder="Nombre encuesta">
                     </div>
             </div>
             <br>
@@ -19,13 +23,13 @@
             <div class="row">
                     <div class="col-sm-8">
                         <label>Nombre de la categoría:</label>
-                        <input type="email" class="form-control" placeholder="Nombre categoría">
+                        <input type="text" class="form-control" ng-model="modelo.categoria.nombre" placeholder="Nombre categoría">
                     </div>
                     <div class="col-sm-2">
                         <label>Agregar categoría:</label>
                     </div>
                     <div class="col-sm-2">
-                        <a class="btn btn-primary">Agregar</a>
+                        <a class="btn btn-primary" ng-click="agregarCategoria()">Agregar</a>
 
                     </div>
 
@@ -40,9 +44,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="list-group">
-                    <a href="/verCategoria.html" class="list-group-item list-group-item-action">Categoría 1</a>
-                    <a href="#" class="list-group-item list-group-item-action">Categoría 2</a>
-                    <a href="#" class="list-group-item list-group-item-action">Categoría 3</a>
+                    <a ng-click="agregarPreguntasFromCategory($index)" class="list-group-item list-group-item-action" ng-repeat="categoria in modelo.categorias">
+                        <div>{{categoria.nombre}}</div>
+                    </a>
+
                 </div>
                 </div>
 
@@ -51,7 +56,7 @@
             <br>
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <a class="btn btn-success">Guardar</a>
+                    <a class="btn btn-success" ng-click="guardarEncuesta()">Guardar</a>
                 </div>
             </div>
 

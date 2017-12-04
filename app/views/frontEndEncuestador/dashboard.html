@@ -1,8 +1,12 @@
+<ng-navigation-encuestador></ng-navigation-encuestador>
 <div ng-controller="DashboardEncuestadorCtrl">
 
     <div class="container">
+        <h2>Hola, {{user.usuario.nombre}}</h2>
+    </div>
+    <div class="container">
         <div class="jumbotron">
-            <label>Numero de encuestas:</label>
+            <label>Numero de encuestas:{{modelo.encuestas.length}}</label>
         </div>
     </div>
 </div>

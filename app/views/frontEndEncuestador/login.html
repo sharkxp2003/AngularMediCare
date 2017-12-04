@@ -15,14 +15,14 @@
             <form>
                 <div class="form-group">
                     <label>Usuario:</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                    <input type="text" class="form-control" id="exampleInputEmail1" ng-model="usuario" aria-describedby="emailHelp" placeholder="Usuario">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Contraseña:</label>
-                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="exampleInputEmail1" ng-model="modelo.pass" aria-describedby="emailHelp" placeholder="Contraseña">
                 </div>
                 <div class="text-center">
-                    <a class="btn btn-primary" href="/dashboard.html">Iniciar Sesión</a>
+                    <button class="btn btn-primary" ng-click="login()">Iniciar Sesión</button>
                 </div>
             </form>
         </div>

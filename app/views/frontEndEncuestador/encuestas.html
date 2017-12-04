@@ -1,3 +1,5 @@
+<ng-navigation-encuestador></ng-navigation-encuestador>
+
 <div ng-controller="EncuestasCtrl">
 
     <div class="container text-center">
@@ -15,27 +17,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
-            <a href="/visualizarEncuesta.html">A0123</a>
-        </td>
-        <td>
-            <a href="/visualizarEncuesta.html">nombre1</a>
-        </td>
-        <td>
-            <a href="/visualizarEncuesta.html">dd-mm-yyyy</a>
-        </td>
-      </tr>
-      <tr>
-        <td>A0124</td>
-        <td>nombre2</td>
-        <td>dd-mm-yyyy</td>
-      </tr>
-      <tr>
-        <td>A0125</td>
-        <td>nombre3</td>
-        <td>dd-mm-yyyy</td>
-      </tr>
+    <tr class="table-row-clientes" ng-repeat="encuesta in modelo.encuestas"
+        ng-click="visualizarEncuesta(encuesta.id)">
+      <td>{{encuesta.uuid}}</td>
+      <td>{{encuesta.nombre}}</td>
+      <td>{{encuesta.f_creacion}}</td>
+
     </tbody>
   </table>
 </div>

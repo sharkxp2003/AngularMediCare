@@ -355,7 +355,7 @@ function $RouteProvider() {
    * The default value is true.
    *
    * **Note**:<br />
-   * You may want to disable the default behavior when unit-testing modules that depend on
+   * You may want to disable the default behavior when unit-testing services that depend on
    * `ngRoute`, in order to avoid an unexpected request for the default route's template.
    *
    * @param {boolean=} enabled - If provided, update the internal `eagerInstantiationEnabled` flag.
