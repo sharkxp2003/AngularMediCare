@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb95678-54b0-4be4-b583-789c31bfaa39" name="Default" comment="baseline 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/jsons/usuarios.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/EncuestaDetalleCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directives/ng-navigation-encuestador.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/CategoriaService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/EncuestaService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/PreguntaService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/TiporespuestaService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/UserService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/modals/dialog_agregar_pregunta.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/ng-navigation-encuestador-template.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/frontEndEncuestador/verCategoria.html" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/agregarCategoria.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/adminControllers/LoginAdminCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/adminControllers/LoginAdminCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/CategoriaCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/CategoriaCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/DashboardEncuestadorCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/DashboardEncuestadorCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/EncuestasCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/EncuestasCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/LoginEncuestadorCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/encuestadorControllers/LoginEncuestadorCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontEndAdmin/login.html" afterPath="$PROJECT_DIR$/app/views/frontEndAdmin/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontEndEncuestador/dashboard.html" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontEndEncuestador/encuestas.html" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/encuestas.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontEndEncuestador/login.html" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontEndEncuestador/nuevaEncuesta.html" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/nuevaEncuesta.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontEndEncuestador/visualizarEncuesta.html" afterPath="$PROJECT_DIR$/app/views/frontEndEncuestador/visualizarEncuesta.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ng-navigation-admin-template.html" afterPath="$PROJECT_DIR$/app/views/ng-navigation-admin-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-mocks/angular-mocks.js" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/angular-mocks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-route/angular-route.js" afterPath="$PROJECT_DIR$/bower_components/angular-route/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/bower_components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/dist/core.js" afterPath="$PROJECT_DIR$/bower_components/jquery/dist/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/bower_components/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/bower_components/jquery/dist/jquery.slim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/exports/amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/var/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/vega-lite/vega-lite.js" afterPath="$PROJECT_DIR$/bower_components/vega-lite/vega-lite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/vega/vega.js" afterPath="$PROJECT_DIR$/bower_components/vega/vega.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/viscompass/compass.js" afterPath="$PROJECT_DIR$/bower_components/viscompass/compass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/viscompass/lib/require.js" afterPath="$PROJECT_DIR$/bower_components/viscompass/lib/require.js" />
-    </list>
+    <list default="true" id="abb95678-54b0-4be4-b583-789c31bfaa39" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -377,7 +336,7 @@
       <workItem from="1511874501223" duration="2472000" />
       <workItem from="1511877887681" duration="5907000" />
       <workItem from="1512016585885" duration="4000" />
-      <workItem from="1512178400307" duration="35857000" />
+      <workItem from="1512178400307" duration="35982000" />
     </task>
     <task id="LOCAL-00001" summary="Agregados directorios de controllers">
       <created>1511859476433</created>
@@ -407,24 +366,32 @@
       <option name="project" value="LOCAL" />
       <updated>1511870520557</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="baseline 1">
+      <created>1512366242436</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512366242436</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59072000" />
+    <option name="totallyTimeSpent" value="59197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5024665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -461,6 +428,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Agregados directorios de controllers" />
     <MESSAGE value="Agregada estructura para adminControllers y encuestadorControllers" />
     <MESSAGE value="Ready to go" />
