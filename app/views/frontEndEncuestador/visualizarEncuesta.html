@@ -1,94 +1,61 @@
 
 
-
+<ng-navigation-encuestador></ng-navigation-encuestador>
 
 <div ng-controller="EncuestaDetalleCtrl">
 
+
     <div class="row-xs-12 text-center">
-        <h1> Visualizar Encuesta</h1>
+        <h1> Visualizar encuesta</h1>
     </div>
     <br>
     <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                Nombre de la encuesta:
+               <h2>{{modelo.encuesta.nombre}}</h2>
+            </div>
+        </div>
+        <br>
+
+        <br>
+        <div class="container">
+            <label>Categorías de preguntas:</label>
+        </div>
+        <br>
 
         <div class="container">
-            <div class="row">
-                     <div class="col-sm-12">
-                        <label class="font-weight-bold">Nombre de la encuesta:</label>
-                        <label>{{modelo.encuesta.nombre}}</label>
-                    </div>
-            </div>
-            <br>
-            <br>
-            <div class="jumbotron">
-                <div class="container">
-                    <label class="font-weight-bold">Categorías de preguntas:</label>
-                </div>
-                <br>
 
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="list-group">
-                            <a href="/visualizarPreguntas.html" class="list-group-item list-group-item-action" ng-repeat="categoria in modelo.encuesta.categoria">
-
-                            </a>
-                    </div>
+                <div class="col-sm-12 text-center" ng-repeat="categoria in modelo.encuesta.categorias">
+                    <div class="jumbotron">
+                        <div class="row">
+                            <h3>{{categoria.nombre}}</h3>
+                            <div class="col-sm-12 text-left" ng-repeat="pregunta in categoria.pregunta">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4>{{pregunta.nombre}}</h4>
+                                    </div>
+                                    <div class="col-sm-12" ng-repeat="respuesta in pregunta.respuesta">
+                                        {{respuesta.nombre}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-            </div>
+
         </div>
+
+
+    </div>
+    <br>
     <div class="row">
-        <div class="col-sm-3 text-center">
-            <a class="btn btn-warning" href="/modificarEncuesta.html">Modificar</a>
+        <div class="col-sm-12 text-center">
+            <a class="btn btn-success" ng-click="guardarEncuesta()">Guardar</a>
         </div>
-        <div class="col-sm-3 text-center">
-            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal">Generar Reporte</a>
-        </div>
-        <div class="col-sm-3 text-center">
-            <a class="btn btn-success" href="/vistaCodigo.html">Generar Código de encuesta</a>
-        </div>
-        <div class="col-sm-3 text-center">
-            <a class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Eliminar</a>
-        </div>
-
     </div>
 
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar Pregunta</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p> Reporte generado</p>
-      </div>
-      <div class="modal-footer">
-        <a href="visualizarEncuesta.html" class="btn btn-primary">Aceptar</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar Pregunta</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p> Encuesta eliminada</p>
-      </div>
-      <div class="modal-footer">
-        <a href="encuestas.html" class="btn btn-primary">Aceptar</a>
-      </div>
-    </div>
-  </div>
-</div>
 </div>

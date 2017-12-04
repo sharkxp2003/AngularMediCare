@@ -1,42 +1,28 @@
 "use strict";
 
-myApp.controller('EncuestaDetalleCtrl', function ($scope,$log,$http,$location,$mdDialog,$routeParams) {
+myApp.controller('EncuestaDetalleCtrl', function ($scope,$log,$http,$location,$mdDialog,$routeParams,EncuestaService,CategoriaService) {
+
+var modelo = {
+    encuesta : {},
+    categoria: {}
+};
+
+EncuestaService.getEncuesta(EncuestaService.nombreEncuesta)
+    .then(function (response) {
+        EncuestaService.setEncuestaLocal(response.data)
+        modelo.encuesta = response.data;
+        CategoriaService.categorias = response.data.categorias;
+    }).catch(function (response) {
+    console.dir("error");
+})
 
 
-    var idEncuesta = $routeParams.idEncuesta
-    var modelo = {
-        categoria : []
-    }
-
-
-
-
-    $http.get('http://localhost:8080/encuesta/'+idEncuesta)
-        .then(function successCallback(response) {
-            //$log.debug("successCallback"+response.data);
-            modelo.encuesta = response.data;
-            for (var value in modelo.encuesta) {
-                console.dir(value)
-            }
-
-        }, function errorCallback(response) {
-            $log.debug("errorCallback");
-        });
-
-
-    $scope.obtenerCategoria = function (value) {
-        $http.get('http://localhost:8080/encuesta/'+idEncuesta)
-            .then(function successCallback(response) {
-                $log.debug("successCallback"+response.data);
-                return response.data;
-            }, function errorCallback(response) {
-                $log.debug("errorCallback");
-            });
-    }
-
+    $scope.agregarPreguntasFromCategory = function (val) {
+        modelo.categoria = modelo.categoria[val]
+        $location.path('/encuesta/categoria');
+    };
 
     $scope.modelo = modelo;
-
 
 
 });

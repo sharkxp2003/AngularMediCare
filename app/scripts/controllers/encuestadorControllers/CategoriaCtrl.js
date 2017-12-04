@@ -1,15 +1,18 @@
 'use strict'
 
-myApp.controller('CategoriaCtrl', function ($scope,$log,$http,$location,$mdDialog,CategoriaService,TiporespuestaService) {
+myApp.controller('CategoriaCtrl', function ($scope,$log,$http,$location,$mdDialog,CategoriaService,TiporespuestaService,PreguntaService) {
+
+
 
     var modelo = {
+        nombre: CategoriaService.categoria.nombre,
         categoria: CategoriaService.categoria,
-        preguntas: []
+        preguntas: CategoriaService.categoria.preguntas
+
     };
 
+
     $scope.modelo = modelo;
-
-
 
     $scope.agregarPregunta = function () {
         $mdDialog.show({
@@ -126,11 +129,8 @@ myApp.controller('CategoriaCtrl', function ($scope,$log,$http,$location,$mdDialo
                 };
 
                 $scope.guardar = function () {
-                    var pregunta = {
-                        nombre: modelo.nombre,
-                        respuestas: modelo.respuestas
-                    }
-                    //preguntas.push(pregunta);
+
+                    pregunta.nombre = modelo.nombre
                     $mdDialog.hide();
 
                 };
@@ -146,7 +146,13 @@ myApp.controller('CategoriaCtrl', function ($scope,$log,$http,$location,$mdDialo
     };
 
     $scope.guardarCategoria = function () {
+
+        modelo.categoria.nombre = $scope.modelo.nombre
+        modelo.categoria.preguntas = modelo.preguntas
+        CategoriaService.guardarCategoriaLocal(modelo.categoria)
         $location.path('/nuevaEncuesta');
     };
+
+
 
 });

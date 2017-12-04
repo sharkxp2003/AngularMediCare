@@ -1,0 +1,57 @@
+
+<ng-navigation-encuestador></ng-navigation-encuestador>
+
+
+<div ng-controller="EncuestaDetalleCtrl">
+    <div class="row-xs-12 text-center">
+        <h1> Visualizar Categorias</h1>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-8">
+                    <label class="font-weight-bold">Nombre de la categoría:</label>
+                    <input type="email" class="form-control" ng-model="modelo.categoria.nombre" placeholder="Nombre categoría">
+
+                </div>
+            </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <label class="font-weight-bold">Preguntas:</label>
+                            <p class="font-italic">Seleccione una pregunta para editarla:</p>
+                        </div>
+                        <div class="col-sm-2 text-right">
+                            <label class="font-weight-bold">Agregar pregunta:</label>
+                        </div>
+                        <div class="col-sm-2 text-right">
+                            <a class="btn btn-primary" ng-click="agregarPregunta()">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="list-group">
+                                <a class="list-group-item list-group-item-action" ng-click="modificarPregunta(pregunta)" ng-repeat="pregunta in modelo.preguntas">{{pregunta.nombre}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a class="btn btn-success" ng-click="guardarCategoria()">Guardar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->

@@ -62,8 +62,12 @@ var myApp = angular
         templateUrl: 'views/frontEndEncuestador/encuestas.html',
         controller: 'EncuestasCtrl',
         controllerAs: 'encuestasCtrl'
-    }).when('/encuestas/:idEncuesta',{
+    }).when('/encuesta',{
         templateUrl: 'views/frontEndEncuestador/visualizarEncuesta.html',
+        controller: 'EncuestaDetalleCtrl',
+        controllerAs: 'encuestaDetalleCtrl'
+    }).when('/encuesta/categoria',{
+        templateUrl: 'views/frontEndEncuestador/visualizarCategorias.html',
         controller: 'EncuestaDetalleCtrl',
         controllerAs: 'encuestaDetalleCtrl'
     })

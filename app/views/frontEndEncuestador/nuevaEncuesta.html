@@ -44,14 +44,25 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="list-group">
-                    <a ng-click="agregarPreguntasFromCategory($index)" class="list-group-item list-group-item-action" ng-repeat="categoria in modelo.categorias">
-                        <div>{{categoria.nombre}}</div>
-                    </a>
+
+                        <div class="list-group-item list-group-item-action" ng-repeat="categoria in modelo.categorias">
+                            <div class="row">
+                                <div class="col-sm-6 text-left" ng-click="agregarPreguntasFromCategory($index)">
+                                    {{categoria.nombre}}
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <a class="btn btn-danger" ng-click="eliminarCategoria($index)">Eliminar</a>
+                                </div>
+                            </div>
+                        </div>
 
                 </div>
                 </div>
 
             </div>
+
+
+
             </div>
             <br>
             <div class="row">

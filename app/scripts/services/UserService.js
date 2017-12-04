@@ -18,5 +18,10 @@ myApp.service('UserService', function ($http) {
         function findUserById(id) {
             return $http.get('http://localhost:8080/usuario/'+id);
         }
+
+
+
+
+
     });
 

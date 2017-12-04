@@ -18,7 +18,7 @@
     </thead>
     <tbody>
     <tr class="table-row-clientes" ng-repeat="encuesta in modelo.encuestas"
-        ng-click="visualizarEncuesta(encuesta.id)">
+        ng-click="visualizarEncuesta(encuesta.nombre)">
       <td>{{encuesta.uuid}}</td>
       <td>{{encuesta.nombre}}</td>
       <td>{{encuesta.f_creacion}}</td>

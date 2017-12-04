@@ -14,7 +14,7 @@
             <div class="row">
                     <div class="col-sm-8">
                         <label class="font-weight-bold">Nombre de la categoría:</label>
-                        <input type="email" class="form-control" ng-model="modelo.categoria.nombre" placeholder="Nombre categoría">
+                        <input type="email" class="form-control" ng-model="modelo.nombre" placeholder="Nombre categoría">
 
             </div>
             <br>
@@ -39,12 +39,13 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="list-group">
-                        <a class="list-group-item list-group-item-action" ng-click="modificarPregunta(pregunta)" ng-repeat="pregunta in modelo.preguntas">{{pregunta.nombre}}</a>
-
+                            <a class="list-group-item list-group-item-action" ng-click="modificarPregunta(pregunta)" ng-repeat="pregunta in modelo.preguntas">{{pregunta.nombre}}</a>
                         </div>
                     </div>
+                 </div>
+                 <div class="row">
                     <div class="col-sm-12">
-                        <a class="btn btn-large btn-success" ng-click="guardarCategoria()">Guardar</a>
+                        <a class="btn btn-success" ng-click="guardarCategoria()">Guardar</a>
                     </div>
                 </div>
             </div>
